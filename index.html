@@ -2,13 +2,13 @@
 <html lang="it">
 <head>
 	<meta charset="utf-8">
-	<title>Indice delle fonti di dati - Dataninja School</title>
+	<title>Solutions Journalism (all'italiana) - Work in Progress</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Indice delle fonti di dati - Dataninja School">
+	<meta name="description" content="Solutions Journalism (all'italiana) - Work in Progress">
 	<meta name="author" content="Dataninja School">
 
 	<meta property="og:image" content="http://petrusino.opendatasicilia.it/img/share.jpg" />
-	<meta property="og:title" content="Indice delle fonti di dati - Dataninja School" />
+	<meta property="og:title" content="Solutions Journalism (all'italiana) - Work in Progress" />
 	<meta property="og:url" content="http://school.dataninja.it" />
 
 	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
@@ -37,7 +37,7 @@
 
     <link rel="exhibit/data" 
     type="application/jsonp"
-    href="https://spreadsheets.google.com/feeds/list/14tRuFg_9eaGX_XNbn9k_WL-4cgQqHmNhtqZPDJ8uJh4/od6/public/basic?alt=json-in-script"
+    href="https://spreadsheets.google.com/feeds/list/1J5o-uDoB7zq7QR5XNwK-JdtyGaCyLxb3nNpLA_IBBSA/od6/public/basic?alt=json-in-script"
     ex:converter="googleSpreadsheets" />
 
 
@@ -65,7 +65,7 @@
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> 
 						<a class="navbar-brand logo" href="#">
-							<img style="max-width:100px; margin-top: 7px;"	src="./img/dataninja_school_ico.png">
+							<img style="max-width:100px; margin-top: 7px;"	src="./img/target.png">
 						</a>
 					</div>
 
@@ -80,7 +80,7 @@
 							</li>	
                                                 -->
 							<li>
-								<a href="./proponi_dati.html">Proponi</a>
+								<a href="./parliamone.html">Parliamone</a>
 							</li>
 						<!--
 						<li>
@@ -90,7 +90,7 @@
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li>
-								<a href="#">Dataninja School</a>
+								<a href="#">Solutions Journalism (all'italiana) - Work in Progress</a>
 							</li>
 						</ul>
 					</div>
@@ -105,7 +105,11 @@
 			</div>
 
 			<div class="col-md-8 column">
-			Se stai cercando dei dati, questo è il posto giusto dove trovare le fonti. Naviga tra i tag e le categorie e usa il campo di ricerca per filtrare i risultati. Le informazioni presenti in questa pagina sono costantemente aggiornate. <a href="./proponi_dati.html"><span class="btn btn-warning btn-xs">Segnala</span></a> un errore o <a href="./proponi_dati.html"><span class="btn btn-warning btn-xs">proponi</span></a> una nuova fonte da aggiungere. 
+			Giornalismo e Azione e/o Solutions Journalism: un luogo condiviso per raccogliere link e risorse, discutere e riflettere su una possibile schematizzazione e generalizzazione del fenomeno. In questa pagina raccogliamo <span class="btn btn-danger">link e risorse</span> che ci sembrano più attinenti al tema.
+			<!--
+			<a href="./proponi_dati.html"><span class="btn btn-warning btn-xs">Segnala</span></a> un errore o <a href="./proponi_dati.html"><span class="btn btn-warning btn-xs">proponi</span></a> una nuova fonte da aggiungere.
+			-->
+			<!--
 			<!--
 				<p class="text-center">... perch&eacute; certi <span class="btn btn-primary btn-xs">siti</span>, <span class="btn btn-danger btn-xs">apps</span>, <span class="btn btn-info btn-xs">mappe</span>, <span class="btn btn-warning btn-xs">servizi</span> sono un po' come il <span class="btn btn-success btn-xs"><strong>prezzemolo</strong></span> e non &egrave; facile distinguerli ...</p>
 			-->
@@ -165,21 +169,21 @@
 					<div ex:role="exhibit-view" 
 					ex:viewClass="Exhibit.TabularView"  
 					ex:label="Table"  
-					ex:columns=".label,.descrizione,.tag,.data_inserimento"  
-					ex:columnLabels="Nome, Descrizione,Tag, Data inserimento" 
+					ex:columns=".titolo,.descrizione,.tag,.url"  
+					ex:columnLabels="Titolo, Descrizione, Tipo, Url" 
 					ex:columnFormats="list,list,list,list"
 					ex:sortColumn="3"
 					ex:sortAscending="false"
 					ex:tableStyler="tableStyler"> 
 					<div ex:role="exhibit-lens">
 						<div class="table-responsive">
-							<table class="table" ex:class-content=".territorio">
+							<table class="table" ex:class-content=".tag">
 								<tr>
-									<td><a ex:href-content=".URL" ex:onclick-subcontent="trackOutboundLink('{{.URL}}'); return false;" target="_blank"><strong><span ex:content=".label" class="petrusino"></strong></span></a></td>
+									<td><a ex:href-content=".URL" ex:onclick-subcontent="trackOutboundLink('{{.URL}}'); return false;" target="_blank"><strong><span ex:content=".titolo" class="petrusino"></strong></span></a></td>
 									<td><span ex:content=".descrizione"></td>
 									<td><span ex:content=".tag"></span></td>
-									<td><span ex:content=".data_inserimento" ></span></td>
-								</tr>
+									<td><a ex:href-content=".URL" ex:onclick-subcontent="trackOutboundLink('{{.URL}}'); return false;" target="_blank"><strong><img style="width:15px;height:15px;" src="https://openclipart.org/download/30493/tango-right-arrow-red.svg" /> </strong></a></td>
+									</tr>
 							</table>
 						</div>
 
@@ -195,7 +199,7 @@
 		<hr>
 		<footer>
 			<p class="text-center">
-				<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a> L'indice si basa su <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a href="http://petrusino.opendatasicilia.it/" target="_blank">Petrusino</a></span>, un progetto di<a xmlns:cc="http://creativecommons.org/ns#" href="http://opendatasicilia.it" property="cc:attributionName" rel="cc:attributionURL"> Open Data Sicilia</a> è distribuito con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale</a>.
+				<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a> Questo strumento di catalogazione e ricerca si basa su <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a href="http://petrusino.opendatasicilia.it/" target="_blank">Petrusino</a></span>, un progetto di<a xmlns:cc="http://creativecommons.org/ns#" href="http://opendatasicilia.it" property="cc:attributionName" rel="cc:attributionURL"> Open Data Sicilia</a> è distribuito con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale</a>.
 			</p>
 		</footer>
 
