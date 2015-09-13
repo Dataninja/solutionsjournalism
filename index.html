@@ -4,11 +4,11 @@
 	<meta charset="utf-8">
 	<title>Solutions Journalism (all'italiana) - Work in Progress</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Indice delle fonti di dati - Dataninja School">
+	<meta name="description" content="Solutions Journalism (all'italiana) - Work in Progress">
 	<meta name="author" content="Dataninja School">
 
 	<meta property="og:image" content="http://petrusino.opendatasicilia.it/img/share.jpg" />
-	<meta property="og:title" content="Indice delle fonti di dati - Dataninja School" />
+	<meta property="og:title" content="Solutions Journalism (all'italiana) - Work in Progress" />
 	<meta property="og:url" content="http://school.dataninja.it" />
 
 	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
@@ -65,7 +65,7 @@
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> 
 						<a class="navbar-brand logo" href="#">
-							<img style="max-width:100px; margin-top: 7px;"	src="./img/dataninja_school_ico.png">
+							<img style="max-width:100px; margin-top: 7px;"	src="./img/target.jpeg">
 						</a>
 					</div>
 
@@ -80,7 +80,7 @@
 							</li>	
                                                 -->
 							<li>
-								<a href="./proponi_dati.html">Proponi</a>
+								<a href="./parliamone.html">Parliamone</a>
 							</li>
 						<!--
 						<li>
@@ -90,7 +90,7 @@
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li>
-								<a href="#">Dataninja School</a>
+								<a href="#">Solutions Journalism (all'italiana) - Work in Progress</a>
 							</li>
 						</ul>
 					</div>
@@ -105,7 +105,7 @@
 			</div>
 
 			<div class="col-md-8 column">
-			Giornalismo e Azione e/o Solutions Journalism: un luogo condiviso per raccogliere link e risorse, discutere e riflettere su una possibile schematizzazione e generalizzazione del fenomeno.
+			Giornalismo e Azione e/o Solutions Journalism: un luogo condiviso per raccogliere link e risorse, discutere e riflettere su una possibile schematizzazione e generalizzazione del fenomeno. In questa pagina raccogliamo <span class="btn btn-danger">link e risorse</span> che ci sembrano più attinenti al tema.
 			<!--
 			<a href="./proponi_dati.html"><span class="btn btn-warning btn-xs">Segnala</span></a> un errore o <a href="./proponi_dati.html"><span class="btn btn-warning btn-xs">proponi</span></a> una nuova fonte da aggiungere.
 			-->
@@ -169,22 +169,21 @@
 					<div ex:role="exhibit-view" 
 					ex:viewClass="Exhibit.TabularView"  
 					ex:label="Table"  
-					ex:columns=".titolo,.descrizione,.tag,.link"  
-					ex:columnLabels="Titolo, Descrizione, Tag, Data inserimento" 
+					ex:columns=".titolo,.descrizione,.tag,.url"  
+					ex:columnLabels="Titolo, Descrizione, Tipo, Url" 
 					ex:columnFormats="list,list,list,list"
 					ex:sortColumn="3"
 					ex:sortAscending="false"
 					ex:tableStyler="tableStyler"> 
 					<div ex:role="exhibit-lens">
 						<div class="table-responsive">
-							<table class="table" ex:class-content=".territorio">
+							<table class="table" ex:class-content=".tag">
 								<tr>
-									<td><a ex:href-content=".URL" ex:onclick-subcontent="trackOutboundLink('{{.URL}}'); return false;" target="_blank"><strong><span ex:content=".label" class="petrusino"></strong></span></a></td>
-									<td><span ex:content=".titolo"></td>
+									<td><a ex:href-content=".URL" ex:onclick-subcontent="trackOutboundLink('{{.URL}}'); return false;" target="_blank"><strong><span ex:content=".titolo" class="petrusino"></strong></span></a></td>
 									<td><span ex:content=".descrizione"></td>
 									<td><span ex:content=".tag"></span></td>
-									<td><span ex:content=".link" ></span></td>
-								</tr>
+									<td><a ex:href-content=".URL" ex:onclick-subcontent="trackOutboundLink('{{.URL}}'); return false;" target="_blank"><strong><img style="width:15px;height:15px;" src="https://openclipart.org/download/30493/tango-right-arrow-red.svg" /> </strong></a></td>
+									</tr>
 							</table>
 						</div>
 
