@@ -58,7 +58,7 @@ ul.nav li.active a {
 }
 
 a {
-    color: #CC0000 !important;
+    color: #CC0000;
 }
 
 /* rimosso momentaneamente export tool */
@@ -69,4 +69,15 @@ a {
 
 .btn {
     padding: 2px 4px;
+}
+
+.btn-danger {
+    border: 1px solid #CC0000;
+    padding: 15px 30px;
+}
+
+.jumbotron {
+  background: url(../img/target_big.png) no-repeat right;
+  background-size: 200px;
+  background-color: #f8f8f8;
 }

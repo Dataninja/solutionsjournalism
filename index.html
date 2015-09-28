@@ -2,24 +2,24 @@
 <html lang="it">
 <head>
 	<meta charset="utf-8">
-	<title>Solutions Journalism (all'italiana) - Work in Progress</title>
+	<title>Solutions Journalism (all'italiana) - Work in Progress </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Solutions Journalism (all'italiana) - Work in Progress">
+	<meta name="description" content="Indice delle fonti di dati - Dataninja School">
 	<meta name="author" content="Dataninja School">
 
-	<meta property="og:image" content="http://petrusino.opendatasicilia.it/img/share.jpg" />
-	<meta property="og:title" content="Solutions Journalism (all'italiana) - Work in Progress" />
-	<meta property="og:url" content="http://school.dataninja.it" />
+  <meta property="og:image" content="http://petrusino.opendatasicilia.it/img/share.jpg" />
+  <meta property="og:title" content="Indice delle fonti di dati - Dataninja School" />
 
-	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
-	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
-	<!--script src="js/less-1.3.3.min.js"></script-->
-	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
-	
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
 
-	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+  <!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+  <!--script src="js/less-1.3.3.min.js"></script-->
+  <!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
   	<!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <![endif]-->
@@ -32,175 +32,81 @@
     <link rel="shortcut icon" href="img/favicon.png">
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootshref="img/apple-touch-icon-57-precomposed.pngtrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 
-    <link rel="exhibit/data" 
-    type="application/jsonp"
-    href="https://spreadsheets.google.com/feeds/list/1J5o-uDoB7zq7QR5XNwK-JdtyGaCyLxb3nNpLA_IBBSA/od6/public/basic?alt=json-in-script"
-    ex:converter="googleSpreadsheets" />
 
-
-    <script src="./js/dist/exhibit-api.js?locale=it"></script>
-
-    
 
     <script type="text/javascript" src="./js/ga.js"></script>
 
-    <script type="text/javascript">
-    var tableStyler = function(table, database) {
-    	$(table).addClass("table table-condensed table-striped");
-    };
-    </script>
+  </head>
 
-    
+  <body>
+   <div class="container">
+    <div class="row clearfix">
+     <div class="col-md-12 column">
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> 
+          <a class="navbar-brand logo" href="./">
+            <img style="max-width:100px; margin-top: 7px;"  src="./img/target.png">
+          </a>
+        </div>
 
-</head>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+           <li class="active">
+            <a href="./index.html">Home</a>
+          </li>
+         <li >
+            <a href="./contesto.html" >Il contesto</a>
+          </li>
+          <li>
+            <a href="./risorse.html">Link e risorse</a>
+          </li>
+          </li>          
+          <li>
+            <a href="./parliamone.html">Parliamone</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+         <li>
+          <a href="../">Solutions Journalism {Work in Progress}</a>
+        </li>
+        </ul>
+    </div>
 
-<body>
-	<div class="container">
-		<div class="row clearfix">
-			<div class="col-md-12 column">
-				<nav class="navbar navbar-default" role="navigation">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> 
-						<a class="navbar-brand logo" href="../">
-							<img style="max-width:100px; margin-top: 7px;"	src="./img/target.png">
-						</a>
-					</div>
+  </nav>
+</div>
+</div>
 
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav">
-							<li class="active">
-								<a href="#">Home</a>
-							</li>
-							<!--
-							<li>
-								<a href="./cosa.html">Cosa &egrave;</a>
-							</li>	
-                                                -->
-							<li>
-								<a href="./parliamone.html">Parliamone</a>
-							</li>
-						<li>
-								<a href="./schema.html">Schema</a>
-							</li>
-						</ul>
-						<ul class="nav navbar-nav navbar-right">
-							<li>
-								<a href="../">Solutions Journalism (all'italiana) - Work in Progress</a>
-							</li>
-						</ul>
-					</div>
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h2>Giornalismo d'Azione / Solution Journalism</h2>
+        <br>
+        <p class="lead">Non solo informare, ma <mark>abilitare</mark> i lettori/utenti a risolvere i propri problemi. Una discussione a più tastiere" per capire come sta cambiando la <mark>funzione</mark> del giornalismo in un'era innervata dall'informazione.</p>
+      </div>
 
-				</nav>
-			</div>
-		</div>
-
-		<div class="row clearfix">
-			<div class="col-md-2 column">
-
-			</div>
-
-			<div class="col-md-8 column">
-			Giornalismo e Azione e/o Solutions Journalism: un luogo condiviso per raccogliere link e risorse, discutere e riflettere su una possibile schematizzazione e generalizzazione del fenomeno. In questa pagina raccogliamo <span class="btn btn-danger">link e risorse</span> che ci sembrano più attinenti al tema.
-			<!--
-			<a href="./proponi_dati.html"><span class="btn btn-warning btn-xs">Segnala</span></a> un errore o <a href="./proponi_dati.html"><span class="btn btn-warning btn-xs">proponi</span></a> una nuova fonte da aggiungere.
-			-->
-			<!--
-			<!--
-				<p class="text-center">... perch&eacute; certi <span class="btn btn-primary btn-xs">siti</span>, <span class="btn btn-danger btn-xs">apps</span>, <span class="btn btn-info btn-xs">mappe</span>, <span class="btn btn-warning btn-xs">servizi</span> sono un po' come il <span class="btn btn-success btn-xs"><strong>prezzemolo</strong></span> e non &egrave; facile distinguerli ...</p>
-			-->
-			</div>
-			<div class="col-md-2 column">
-			<!--
-				<ul class="share-buttons">
-					<li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fpetrusino.opendatasicilia.it&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="img/Facebook.png"></a></li>
-					<li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fpetrusino.opendatasicilia.it&text=:%20http%3A%2F%2Fpetrusino.opendatasicilia.it&via=opendatasicilia" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img src="img/Twitter.png"></a></li>
-					<li><a href="https://plus.google.com/share?url=http%3A%2F%2Fpetrusino.opendatasicilia.it" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;"><img src="img/Google+.png"></a></li>
-				</ul>
-				-->
-			</div>
-
-		</div>		
-		<div class="row clearfix">
-			<div class="col-md-1 column">
-
-			</div>
-			<div class="col-md-10 column">
-				<strong>Cerca</strong><div ex:role="facet" ex:facetClass="TextSearch"></div>
-			</div>
-			<div class="col-md-1 column">
-
-			</div>
-		</div>
-		<div class="row clearfix">
-			<div class="col-md-12 column">
-				<div ex:role="facet" 
-				ex:facetClass="Cloud"
-				ex:expression=".tag" 
-				ex:facetLabel="Cerca per Tag"
-				ex:sortMode="count"></div>
-			</div>
-			<!--
-			<div class="col-md-2 column">
-				<div ex:role="facet" 
-				ex:expression=".territorio" 
-				ex:facetLabel="Territorio"
-				ex:sortMode="count"></div>
-			</div>
-			<div class="col-md-3 column">
-				<div ex:role="facet" 
-				ex:expression=".tipo" 
-				ex:facetLabel="Tipo"
-				data-ex-missing-label="Non specificato">
-				</div>
-			</div>
-			-->
-		</div>
-		<div class="row clearfix">
-			<div class="col-md-12 column">
-
-				<div ex:role="viewPanel" style="padding: 0in;">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <p><a class="btn btn-danger" href="contesto.html" role="button">Uno schema concettuale</a></p>
+        </div>
+        <div class="col-lg-4">
+          <p><a class="btn btn-danger" href="risorse" role="button">Progetti, strumenti, analisi</a></p>
+       </div>
+        <div class="col-lg-4">
+          <p><a class="btn btn-danger" href="parliamone.html" role="button">Parliamone insieme!</a></p>
+        </div>
+      </div>
 
 
-					<div ex:role="exhibit-view" 
-					ex:viewClass="Exhibit.TabularView"  
-					ex:label="Table"  
-					ex:columns=".titolo,.descrizione,.tag,.url"  
-					ex:columnLabels="Titolo, Descrizione, Tipo, Url" 
-					ex:columnFormats="list,list,list,list"
-					ex:sortColumn="3"
-					ex:sortAscending="false"
-					ex:tableStyler="tableStyler"> 
-					<div ex:role="exhibit-lens">
-						<div class="table-responsive">
-							<table class="table" ex:class-content=".tag">
-								<tr>
-									<td><a ex:href-content=".URL" ex:onclick-subcontent="trackOutboundLink('{{.URL}}'); return false;" target="_blank"><strong><span ex:content=".titolo" class="petrusino"></strong></span></a></td>
-									<td><span ex:content=".descrizione"></td>
-									<td><span ex:content=".tag"></span></td>
-									<td><a ex:href-content=".URL" ex:onclick-subcontent="trackOutboundLink('{{.URL}}'); return false;" target="_blank"><strong><img style="width:15px;height:15px;" src="https://openclipart.org/download/30493/tango-right-arrow-red.svg" /> </strong></a></td>
-									</tr>
-							</table>
-						</div>
+<hr>
+<footer>
+ <p class="text-center">
+				<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a> L'indice si basa su <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a href="http://petrusino.opendatasicilia.it/" target="_blank">Petrusino</a></span>, un progetto di<a xmlns:cc="http://creativecommons.org/ns#" href="http://opendatasicilia.it" property="cc:attributionName" rel="cc:attributionURL"> Open Data Sicilia</a> distribuito con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale</a>.
+</footer>
 
-					</div>
-				</div> 
-
-
-
-
-			</div>
-
-		</div>
-		<hr>
-		<footer>
-			<p class="text-center">
-				<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a> Questo strumento di catalogazione e ricerca si basa su <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a href="http://petrusino.opendatasicilia.it/" target="_blank">Petrusino</a></span>, un progetto di<a xmlns:cc="http://creativecommons.org/ns#" href="http://opendatasicilia.it" property="cc:attributionName" rel="cc:attributionURL"> Open Data Sicilia</a> è distribuito con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale</a>.
-			</p>
-		</footer>
-
-	</div>
+</div>
 </body>
 </html>
